@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins:wght@100&display=swap" rel="stylesheet">
@@ -16,65 +16,70 @@
 <body>
 
     <header>
+        <!-- ******************************SKIP LINKS*************************************** -->
+       <ul id="skip-links">
+           <li><a href="#about" aria-label="go to about">About</a></li>
+           <li><a href="#mission-container" aria-label="go to mission">Mission</a></li>
+           <li><a href="#vision-container" aria-label="go to vision">Vision</a></li>
+       </ul>
 
-               <!-- ******************************NAVIGATION - MENU ITEMS*************************************** -->
-        <div class="wrapper">
-            <nav>
-                <a href="index.html" aria-label="goes to main home page">
-                    <picture>
-                        <source srcset="images/logo-200_x_133.png" media="(max-width:800px)">
-                        <source srcset="images/logo-400_x_267.png" media="(min-width:800px)">
-                        <img src="images/logo.png" alt="Sweet and Joy logo" class="logo">
-                    </picture>   
-                </a>
+              <!-- ******************************NAVIGATION - MENU ITEMS*************************************** -->
+       <div class="wrapper">
+           <nav>
+               <a href="index.html" aria-label="goes to main home page">
+                   <picture>
+                       <source srcset="images/logo-200_x_133.png" media="(max-width:800px)">
+                       <source srcset="images/logo-400_x_267.png" media="(min-width:800px)">
+                       <img src="images/logo.png" alt="Sweet and Joy logo" class="logo">
+                   </picture>   
+               </a>
 
-                <div class="nav-bar">
-                    <ul class="navbar-items">
-                        <li><a href="index.html" class="home" aria-label="Home page">HOME</a></li>
-                        <li><a href="products.html" class="products" aria-label="Products page">PRODUCTS</a></li>
-                        <li><a href="about.html" class="about" aria-label="about page">ABOUT</a></li>
-                        <li><a href="contact.html" class="contact" aria-label="Contact page">CONTACT</a></li>
-                    </ul>
+               <div class="nav-bar">
+                   <ul class="navbar-items">
+                       <li><a href="index.html" class="home" aria-label="Home page">HOME</a></li>
+                       <li><a href="products.html" class="products" aria-label="Products page">PRODUCTS</a></li>
+                       <li><a href="about.html" class="about" aria-label="about page">ABOUT</a></li>
+                       <li><a href="contact.html" class="contact" aria-label="Contact page">CONTACT</a></li>
+                   </ul>
+                   
+                   <form class="search-bar">
+                       <input type="search" name="search" id="search" placeholder="Search">
+                       
+                       <button>
+                           <span class="material-icons-outlined">search</span>
+                       </button>
+                   </form>      
+               </div>  
+           </nav>
+       </div>
 
-                    <form class="search-bar">
-                        <input type="search" name="search" id="search" placeholder="Search">
-                        
-                        <button>
-                            <span class="Search-icon">Search</span>
-                        </button>
-                    </form>      
-                </div>  
-            </nav>
-        </div>
-        <hr>
-    </header>
+   </header>
 
     <main>
-        <div class="about">
-            <div class="about-info">
+        <div id="about" class="about-info">
                 <h1>About</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ad inventore laboriosam ex asperiores eos incidunt voluptatem, animi voluptatum deleniti commodi suscipit harum voluptas qui. Animi aliquam quas ratione soluta.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ad inventore laboriosam ex asperiores eos incidunt voluptatem, animi voluptatum deleniti commodi suscipit harum voluptas qui. Animi aliquam quas ratione soluta.</p>
-            </div>
-            
         </div>
-
+            
 
         <!-- ************************* MISSION VISION CONTACT****************************** -->
-        <div class="mission-container">
-            <div class="mission">
-                <h2>Vision</h2>
+
+        <div class="mission-vision">
+            <div id="mission-container" class="mission">
+                <h2>Mission</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eligendi tempora harum molestiae doloremque ullam totam error quibusdam recusandae iste. Quaerat neque vel recusandae eos aspernatur inventore nemo commodi dolores!</p>
+        
             </div>
-        </div>
     
 
-        <div class="vision-container">
-            <div class="vision">
+        <div id="vision-container" class="vision">
                 <h2>Vision</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eligendi tempora harum molestiae doloremque ullam totam error quibusdam recusandae iste. Quaerat neque vel recusandae eos aspernatur inventore nemo commodi dolores!</p>
             </div>
+
         </div>
+     
 
 
         <div class="contact-info">
@@ -114,13 +119,11 @@
 
     </main>
 
-     <!-- ******************************BACK TO TOP BUTTON*************************************** -->
-     <div class="back-to-top-button">
-        <a href="#"><span class="back-to-top">expand_less
+       <!-- ******************************BACK TO TOP BUTTON*************************************** -->
+       <div class="back-to-top-button">
+        <a href="#"><span class="back-to-top material-icons-outlined" aria-label="back to top">expand_less
         </span></a>
     </div>
-
-
 
 
            <!-- ****************************** FOOTER *************************************** -->

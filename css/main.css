@@ -134,6 +134,7 @@ ul {
     max-width: 100%;
 }
 
+
 /* BUTTON STYLE */
 
 .button{
@@ -151,10 +152,96 @@ ul {
 
 .button a:hover{
     background-color: #c4859c;
-    transform: scale(2);
 }
 
 
 
+/* FOOTER */
+
+hr {
+    height: 2px;
+    background-color: #95008c;
+    border: none;
+}
+
+.footer-content{
+    color:#95008c;
+    margin:0 auto;
+    max-width: 1400px;
+    display: block;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.social-group a{
+    text-decoration: none;
+    color:#95008c;
+}
+
+.svg-icon{
+    fill: #95008c;
+}
+
+/* .svg-items{
+    display: flex;
+} */
+
+/* .footer-content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+} */
+
+/* .copyright{
+    text-align: right;
+    padding-right:1rem;
+    align-self: center;
+} */
+
+.back-to-top-button a{
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    background-color:#95008c ;
+    border-radius: 50%;
+    padding: 0.3rem 0.5rem;
+}
+
+
+
+.back-to-top{
+    color: rgb(255, 255, 255);
+}
+
+.back-to-top-button a:hover{
+    background-color: #c4859c;
+}
+
+/* ABOUT PAGE */
+
+.about-info {
+    background-color: #95008c;
+    text-align: center;
+    color: #f5eaf4;
+    margin: 0 auto;
+    padding: 5px 0px;
+    position: relative;
+}
+
+.mission-vision {
+    background-color: white;
+    text-align: center;
+    position:relative;
+    padding: 5px 0px;
+}
+
+.contact-info {
+    position: relative;
+    padding: 5px 0px;
+    text-align: center;
+    position:relative;
+
+}
 
 
