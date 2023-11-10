@@ -351,6 +351,16 @@ th {
 
 }
 
+
+/* MEDIA QUERIES - ABOUT */
+
+@media screen and (min-width:800px){
+    .about-info, .mission-vision{
+        max-width: 800px;
+        margin:0 auto}
+    }
+
+
 /* MEDIA QUERIES - CONTACT */
 
 @media screen and (min-width:800px){
