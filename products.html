@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins:wght@100&display=swap" rel="stylesheet">
@@ -17,38 +17,45 @@
 <body>
 
     <header>
+        <!-- ******************************SKIP LINKS*************************************** -->
+       <ul id="skip-links">
+           <li><a href="#shop-cakes" aria-label="shop cakes">Shop Cakes</a></li>
+           <li><a href="#shop-pastries" aria-label="shop pastries">Shop Pastries</a></li>
+           <li><a href="#shop-icecream" aria-label="shop icecreams">Shop Ice Creams</a></li>
+           <li><a href="#shop-drinks" aria-label="shop drinks">Shop Drinks</a></li>
+       </ul>
 
-               <!-- ******************************NAVIGATION - MENU ITEMS*************************************** -->
-        <div class="wrapper">
-            <nav>
-                <a href="index.html" aria-label="goes to main home page">
-                    <picture>
-                        <source srcset="images/logo-200_x_133.png" media="(max-width:800px)">
-                        <source srcset="images/logo-400_x_267.png" media="(min-width:800px)">
-                        <img src="images/logo.png" alt="Sweet and Joy logo" class="logo">
-                    </picture>   
-                </a>
+              <!-- ******************************NAVIGATION - MENU ITEMS*************************************** -->
+       <div class="wrapper">
+           <nav>
+               <a href="index.html" aria-label="goes to main home page">
+                   <picture>
+                       <source srcset="images/logo-200_x_133.png" media="(max-width:800px)">
+                       <source srcset="images/logo-400_x_267.png" media="(min-width:800px)">
+                       <img src="images/logo.png" alt="Sweet and Joy logo" class="logo">
+                   </picture>   
+               </a>
 
-                <div class="nav-bar">
-                    <ul class="navbar-items">
-                        <li><a href="index.html" class="home" aria-label="Home page">HOME</a></li>
-                        <li><a href="products.html" class="products" aria-label="Products page">PRODUCTS</a></li>
-                        <li><a href="about.html" class="about" aria-label="about page">ABOUT</a></li>
-                        <li><a href="contact.html" class="contact" aria-label="Contact us page">CONTACT</a></li>
-                    </ul>
+               <div class="nav-bar">
+                   <ul class="navbar-items">
+                       <li><a href="index.html" class="home" aria-label="Home page">HOME</a></li>
+                       <li><a href="products.html" class="products" aria-label="Products page">PRODUCTS</a></li>
+                       <li><a href="about.html" class="about" aria-label="about page">ABOUT</a></li>
+                       <li><a href="contact.html" class="contact" aria-label="Contact page">CONTACT</a></li>
+                   </ul>
+                   
+                   <form class="search-bar">
+                       <input type="search" name="search" id="search" placeholder="Search">
+                       
+                       <button>
+                           <span class="material-icons-outlined">search</span>
+                       </button>
+                   </form>      
+               </div>  
+           </nav>
+       </div>
 
-                    <form class="search-bar">
-                        <input type="search" name="search" id="search" placeholder="Search">
-                        
-                        <button>
-                            <span class="Search-icon">Search</span>
-                        </button>
-                    </form>      
-                </div>  
-            </nav>
-        </div>
-        <hr>
-    </header>
+   </header>
 
          <!-- ******************************PRODUCTS PRODUCTS PRODUCTS *************************************** -->
     <main>
@@ -57,115 +64,122 @@
         </div>
 
         <div class="products-grid">
-            <div class="product">
+            <div id="shop-cakes" class="cake">
 
                 <picture>
-                    <source srcset="" media="(max-width:800px)">
-                    <source srcset="" media="(min-width:800px)">
-                    <img src="" alt="">
+                    <source srcset="images/cakes/cakes-300_x_300.jpg" media="(max-width:800px)">
+                    <source srcset="images/cakes/cakes-500_x_500.jpg" media="(min-width:800px)">
+                    <img src="images/cakes/cakes.jpg" alt="photo of a delicious cake">
                 </picture>
                 
 
                 <h2>Cakes</h2>
-                <hr>
+       
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit libero culpa quis vero vel voluptates consequuntur fugiat, illum odio excepturi eligendi, amet a velit aperiam aut. Deleniti, illo adipisci.</p>
                 <div class="button"><a href="#" aria-label="Shop for cakes">Shop Cakes &#x25BA;</a> </div>
             </div>
 
-            <div class="Pastries">
+        <hr>
+
+            <div id="shop-pastries" class="pastries">
 
                 <picture>
-                    <source srcset="" media="(max-width:800px)">
-                    <source srcset="" media="(min-width:800px)">
-                    <img src="" alt="">
+                    <source srcset="images/pastries/pastries-300_x_300.jpg" media="(max-width:800px)">
+                    <source srcset="images/pastries/pastries-500_x_500.jpg" media="(min-width:800px)">
+                    <img src="images/pastries.jpg" alt="photo of yummy pastries">
                 </picture>
                 
                 <h2>Pastries</h2>
-                <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit libero culpa quis vero vel voluptates consequuntur fugiat, illum odio excepturi eligendi, amet a velit aperiam aut. Deleniti, illo adipisci.</p>
                 <div class="button"><a href="#" aria-label="Shop for pastries">Shop Pastries &#x25BA;</a> </div>
             </div>
+        
+        <hr>
 
-            <div class="product">
+            <div id="shop-icecream" class="icecream">
 
                 <picture>
-                    <source srcset="" media="(max-width:800px)">
-                    <source srcset="" media="(min-width:800px)">
-                    <img src="" alt="">
+                    <source srcset="images/icecream/icecream-300_x_300.jpg" media="(max-width:800px)">
+                    <source srcset="images/icecream/icecream-500_x_500.jpg" media="(min-width:800px)">
+                    <img src="images/icecream.jpg" alt="photo of a mouth-watering ice cream">
                 </picture>
                 
                 <h2>Ice cream</h2>
-                <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit libero culpa quis vero vel voluptates consequuntur fugiat, illum odio excepturi eligendi, amet a velit aperiam aut. Deleniti, illo adipisci.</p>
                 <div class="button"><a href="#" aria-label="Shop for ice cream">Shop Ice cream &#x25BA;</a> </div>
             </div>
 
-            <div class="product">
+        <hr>
+
+            <div id="shop-drinks" class="drinks">
 
                 <picture>
-                    <source srcset="" media="(max-width:800px)">
-                    <source srcset="" media="(min-width:800px)">
-                    <img src="" alt="">
+                    <source srcset="images/coffee/coffee-300_x_300.jpg" media="(max-width:800px)">
+                    <source srcset="images/coffee/coffee-500_x_500.jpg" media="(min-width:800px)">
+                    <img src="images/coffee.jpg" alt="photo of enticing coffee">
                 </picture>
                 
-                <h2>Hot and Cold Drinks</h2>
-                <hr>
+                <h2 id="drinks">Hot and Cold Drinks</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit libero culpa quis vero vel voluptates consequuntur fugiat, illum odio excepturi eligendi, amet a velit aperiam aut. Deleniti, illo adipisci.</p>
                 <div class="button"><a href="#" aria-label="Shop for drinks">Shop Drinks &#x25BA;</a> </div>
             </div>
+
                     
         </div>
     </main>
 
 
 
-         <!-- ******************************BACK TO TOP BUTTON*************************************** -->
-         <div class="back-to-top-button">
-            <a href="#"><span class="back-to-top">expand_less
-            </span></a>
-        </div>
+      <!-- ******************************BACK TO TOP BUTTON*************************************** -->
+      <div class="back-to-top-button">
+        <a href="#"><span class="back-to-top material-icons-outlined" aria-label="back to top">expand_less
+        </span></a>
+    </div>
+
     
-    
-    
-               <!-- ****************************** FOOTER *************************************** -->
-        <footer>
-            <hr>
-            
-            <div class="footer-content">
-                <div class="social-icons">
-                    <div class="svg-items">
-                        <svg 
-                            x="0px" y="0px" width="35" height="35" viewBox="0 0 30 30">
-                            <a xlink:href="https://www.facebook.com/" target="_blank">
-                            <path class="svg-icon" d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
-                            </a>
-                        </svg>
-    
-                        <svg 
-                            x="0px" y="0px" width="35" height="35" viewBox="0 0 30 30">
-                            <a xlink:href="https://www.instagram.com/" target="_blank">
-                                <path class="svg-icon" d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"></path>
-                            </a>
-                        </svg>
-    
-                        <svg 
-                            x="0px" y="0px" width="35" height="35" viewBox="0 0 30 30">
-                            <a xlink:href="https://twitter.com/" target="_blank">
-                                <path class="svg-icon" d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.464,12.535 c0.006,0.133,0.009,0.265,0.009,0.397c0,4.068-3.095,8.756-8.756,8.756c-1.739,0-3.356-0.509-4.717-1.383 c0.241,0.029,0.486,0.042,0.735,0.042c1.443,0,2.769-0.491,3.821-1.318c-1.347-0.025-2.484-0.915-2.875-2.137 c0.188,0.036,0.381,0.055,0.579,0.055c0.281,0,0.554-0.038,0.811-0.108c-1.408-0.282-2.469-1.526-2.469-3.017 c0-0.013,0-0.026,0-0.039c0.415,0.231,0.889,0.369,1.394,0.385c-0.825-0.551-1.369-1.494-1.369-2.561 c0-0.565,0.151-1.094,0.416-1.547c1.518,1.862,3.786,3.088,6.343,3.216c-0.052-0.225-0.079-0.46-0.079-0.701 c0-1.699,1.378-3.078,3.077-3.078c0.885,0,1.685,0.374,2.246,0.972c0.701-0.139,1.36-0.394,1.955-0.747 c-0.23,0.719-0.718,1.321-1.354,1.703c0.622-0.074,1.215-0.239,1.768-0.484C22.588,11.559,22.067,12.1,21.464,12.535z"></path>
-                            </a>
-                        </svg>   
-                    </div>
-                    
+<hr>
+
+           <!-- ****************************** FOOTER *************************************** -->
+    <footer>
+        
+        <div class="footer-content">
+            <div class="social-icons">
+                <div class="svg-items">
+                    <svg 
+                        x="0px" y="0px" width="35" height="35" viewBox="0 0 30 30">
+                        <a xlink:href="https://www.facebook.com/" target="_blank">
+                        <path class="svg-icon" d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
+                        </a>
+                    </svg>
+
+                    <svg 
+                        x="0px" y="0px" width="35" height="35" viewBox="0 0 30 30">
+                        <a xlink:href="https://www.instagram.com/" target="_blank">
+                            <path class="svg-icon" d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"></path>
+                        </a>
+                    </svg>
+
+                    <svg 
+                        x="0px" y="0px" width="35" height="35" viewBox="0 0 30 30">
+                        <a xlink:href="https://twitter.com/" target="_blank">
+                            <path class="svg-icon" d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.464,12.535 c0.006,0.133,0.009,0.265,0.009,0.397c0,4.068-3.095,8.756-8.756,8.756c-1.739,0-3.356-0.509-4.717-1.383 c0.241,0.029,0.486,0.042,0.735,0.042c1.443,0,2.769-0.491,3.821-1.318c-1.347-0.025-2.484-0.915-2.875-2.137 c0.188,0.036,0.381,0.055,0.579,0.055c0.281,0,0.554-0.038,0.811-0.108c-1.408-0.282-2.469-1.526-2.469-3.017 c0-0.013,0-0.026,0-0.039c0.415,0.231,0.889,0.369,1.394,0.385c-0.825-0.551-1.369-1.494-1.369-2.561 c0-0.565,0.151-1.094,0.416-1.547c1.518,1.862,3.786,3.088,6.343,3.216c-0.052-0.225-0.079-0.46-0.079-0.701 c0-1.699,1.378-3.078,3.077-3.078c0.885,0,1.685,0.374,2.246,0.972c0.701-0.139,1.36-0.394,1.955-0.747 c-0.23,0.719-0.718,1.321-1.354,1.703c0.622-0.074,1.215-0.239,1.768-0.484C22.588,11.559,22.067,12.1,21.464,12.535z"></path>
+                        </a>
+                    </svg>   
                 </div>
-    
                 
-    
-                <p class="copyright">&copy; 2023 Sweet and Joy</p>
-    
-            
             </div>
-    
-        </footer>
+
+            
+            <p class="copyright">&copy; 2023 Sweet and Joy</p>
+
+        
+        </div>
+
+    </footer>
 
     </body>
 </html>
+
+
+<!-- All photos used  are from www.pexels.com, www.unsplash.com -->
+<!-- Delivery, package, discount icons are from www.freepik.com -->
