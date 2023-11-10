@@ -328,3 +328,17 @@ th {
 .button-form:hover{
     background-color: #fde8f1;
 }
+
+
+
+/* PRODUCT PAGE */
+
+.product-text {
+    background-color: #95008c;
+    color: white;
+    text-align: center;
+}
+
+.products-grid {
+    text-align: center;
+}
