@@ -35,10 +35,8 @@ body {background-color: rgb(231, 206, 255);
 }
 
 .logo{
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     display: block;
-
 }
 
 nav{
@@ -49,13 +47,16 @@ nav{
 .nav-bar{
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .navbar-items a{
     text-decoration: none;
-    padding: 1rem;
+    padding: .5rem;
     display: block;
     color: #95008c;
+    padding-right: 50px;
+
 }
 
 ul {
@@ -68,7 +69,6 @@ ul {
     border-radius: 25px;
     background-color: white;
     max-width: 15rem;
-    text-align: center;
     margin: 0 auto;
     margin-top: 1rem;
 }
@@ -111,10 +111,50 @@ ul {
 
 /* HERO BANNER */
 
-.hero-banner {
+.hero-banner{
+    position: relative;
     text-align: center;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 1rem auto;
+    padding: 5px 0px;
 }
+
+.personalized{
+    background-color: white;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 5px;
+}
+
+.services{
+    margin:0 auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+/* BUTTON STYLE */
+
+.button{
+    display: block;
+    margin: 2rem 0; 
+}
+
+.button a{
+    background-color: #95008c;
+    border-radius: 8px;
+    color: #f5eaf4;
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+}
+
+.button a:hover{
+    background-color: #c4859c;
+    transform: scale(2);
+}
+
+
+
 
 
