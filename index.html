@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins:wght@100&display=swap" rel="stylesheet">
@@ -16,14 +17,20 @@
 <body>
 
     <header>
+         <!-- ******************************SKIP LINKS*************************************** -->
+        <ul id="skip-links">
+            <li><a href="#home-banner" aria-label="go to main banner">Go to home banner</a></li>
+            <li><a href="#shop-now" aria-label="go to shop now">Shop now</a></li>
+            <li><a href="#personalized-services" aria-label="go to services">Go to personalized services</a></li>
+        </ul>
 
                <!-- ******************************NAVIGATION - MENU ITEMS*************************************** -->
         <div class="wrapper">
             <nav>
-                <a href="index.html" aria-label="main home page">
+                <a href="index.html" aria-label="goes to main home page">
                     <picture>
-                        <source srcset="images/logo-100_x_66.png" media="(max-width:760px)">
-                        <source srcset="images/logo-200_x_133.png" media="(min-width:760px)">
+                        <source srcset="images/logo-200_x_133.png" media="(max-width:800px)">
+                        <source srcset="images/logo-400_x_267.png" media="(min-width:800px)">
                         <img src="images/logo.png" alt="Sweet and Joy logo" class="logo">
                     </picture>   
                 </a>
@@ -35,18 +42,18 @@
                         <li><a href="about.html" class="about" aria-label="about page">ABOUT</a></li>
                         <li><a href="contact.html" class="contact" aria-label="Contact page">CONTACT</a></li>
                     </ul>
-
+                    
                     <form class="search-bar">
                         <input type="search" name="search" id="search" placeholder="Search">
                         
                         <button>
-                            <span class="Search-icon">Search</span>
+                            <span class="material-icons-outlined">search</span>
                         </button>
                     </form>      
                 </div>  
             </nav>
         </div>
-        <hr>
+
     </header>
 
 
@@ -54,13 +61,13 @@
         <!-- ******************************HERO BANNER*************************************** -->
         <div class="hero-banner">
 
-            <picture>
-                <source srcset="images/hero-banner-640_x_479.jpg" media="(max-width:760px)">
-                <source srcset="images/hero-banner-800_x_600.jpg" media="(min-width:760px)">
+            <picture id="home-banner" >
+                <source srcset="images/hero-banner-640_x_479.jpg" media="(max-width:800px)">
+                <source srcset="images/hero-banner-800_x_600.jpg" media="(min-width:800px)">
                 <img src="images/banner.jpg" alt="picture of cupcakes" class="banner-image">
             </picture>
 
-            <div class="banner-content">
+            <div id="shop-now" class="banner-content">
                 <h1 class="catch-phrase"> Your bakeshop for all occassions</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste accusamus beatae error ad, quas nihil architecto quis animi repellat odio rem quam expedita fuga atque ex? Nemo, tempora ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste accusamus beatae error ad, quas nihil architecto quis animi repellat odio rem quam expedita fuga atque ex? Nemo, tempora ab.</p>
 
@@ -71,7 +78,7 @@
 
         <!-- ******************************PERSONALIZED SERVICES*************************************** -->
 
-        <div class="personalized">
+        <div id="personalized-services" class="personalized">
             <h1> Made just for you!</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste accusamus beatae error ad, quas nihil architecto quis animi repellat odio rem quam expedita fuga atque ex? Nemo, tempora ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste accusamus beatae error ad, quas nihil architecto quis animi repellat odio rem quam expedita fuga atque ex? Nemo, tempora ab.</p>
         </div>
@@ -82,8 +89,8 @@
                 <div class="delivery">
                     <h3>Delivery</h3>
                     <picture>
-                         <source srcset="images/delivery-100_x_135.png" media="(max-width:760px)">
-                         <source srcset="images/delivery-200_x_272.png" media="(min-width:760px)">
+                         <source srcset="images/delivery-100_x_135.png" media="(max-width:800px)">
+                         <source srcset="images/delivery-200_x_272.png" media="(min-width:800px)">
                          <img src="images/delivery.png" alt="delivery icon">
                      </picture>
 
@@ -93,8 +100,8 @@
                  <div class="package">
                     <h3>Package</h3>
                     <picture>
-                         <source srcset="images/packaging-100_x_135.png" media="(max-width:760px)">
-                         <source srcset="images/packaging-200_x_272.png" media="(min-width:760px)">
+                         <source srcset="images/packaging-100_x_135.png" media="(max-width:800px)">
+                         <source srcset="images/packaging-200_x_272.png" media="(min-width:800px)">
                          <img src="images/packaging.png" alt="gift icon">
                      </picture>
 
@@ -104,8 +111,8 @@
                  <div class="Discount">
                     <h3>15% Discount</h3>
                     <picture>
-                         <source srcset="images/discount-100_x_135.png" media="(max-width:760px)">
-                         <source srcset="images/discount-200_x_272.png" media="(min-width:760px)">
+                         <source srcset="images/discount-100_x_135.png" media="(max-width:800px)">
+                         <source srcset="images/discount-200_x_272.png" media="(min-width:800px)">
                          <img src="images/discount.png" alt="icon for cupcake">
                      </picture>
 
@@ -120,15 +127,15 @@
 
        <!-- ******************************BACK TO TOP BUTTON*************************************** -->
        <div class="back-to-top-button">
-        <a href="#"><span class="back-to-top">
+        <a href="#"><span class="back-to-top">expand_less
         </span></a>
     </div>
+
     
 
 
            <!-- ****************************** FOOTER *************************************** -->
     <footer>
-        <hr>
         
         <div class="footer-content">
             <div class="social-icons">
