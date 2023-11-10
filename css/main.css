@@ -345,6 +345,11 @@ th {
         padding-top: 2rem;
     }
 
+    .services{
+        display:grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+    }
+
     /* .search-bar{
         display:inline-block;
     } */
@@ -376,7 +381,8 @@ th {
 
     .product-grid{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 50% 50%;
+        max-width: 100%;
         gap: 1rem;
         margin: 0 auto;
         text-align: center;}
