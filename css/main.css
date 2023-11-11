@@ -348,7 +348,7 @@ th {
 
     .services{
         display:grid;
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     /* .search-bar{
@@ -382,12 +382,11 @@ th {
 
     .product-grid{
         display: grid;
-        grid-template-columns: 50% 50%;
-        max-width: 100%;
-  
+        grid-template-columns: 1fr 1fr;
         margin: 0 auto;
-        text-align: center;}
-} */
+    }
+    } */
+
 
 
 /* ANIMATION SERVICES*/
