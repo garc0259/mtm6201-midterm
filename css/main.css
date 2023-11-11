@@ -378,13 +378,13 @@ th {
 /* MEDIA QUERIES - PRODUCTS */
 
 
-@media screen and (min-width:800px){
+/* @media screen and (min-width:800px){
 
     .product-grid{
         display: grid;
         grid-template-columns: 50% 50%;
         max-width: 100%;
-        gap: 1rem;
+  
         margin: 0 auto;
         text-align: center;}
-}
+} */
