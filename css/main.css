@@ -358,9 +358,10 @@ th {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* .search-bar{
-        display:inline-block;
-    } */
+    .search-bar{
+         max-width: 800px;
+      
+    }
 
 }
 
